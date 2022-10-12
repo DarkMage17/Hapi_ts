@@ -1,0 +1,23 @@
+{
+  "name": "hapi_typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -e ts --exec \"npm run buildRun\"",
+    "build": "tsc",
+    "buildRun": "npm run build && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^20.2.2"
+  },
+  "devDependencies": {
+    "@types/hapi__hapi": "^20.0.12",
+    "@types/node": "^18.8.4",
+    "nodemon": "^2.0.20",
+    "typescript": "^4.8.4"
+  }
+}
